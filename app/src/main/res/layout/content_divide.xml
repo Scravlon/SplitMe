@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="net.ddns.scravlon.splitmefull.DivideActivity"
+    tools:showIn="@layout/activity_divide"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/backgound"
+    >
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div_seek"
+                android:layout_centerHorizontal="true"
+                android:text="Amount"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="161dp"
+                tools:layout_editor_absoluteY="234dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/divamount_editText"
+                android:layout_toLeftOf="@+id/divamount_editText"
+                android:layout_toStartOf="@+id/divamount_editText"
+                android:text="RM"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="49dp"
+                tools:layout_editor_absoluteY="274dp" />
+
+            <EditText
+                android:id="@+id/divamount_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divpeople_editText"
+                android:layout_alignStart="@+id/divpeople_editText"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <EditText
+                android:id="@+id/divpeople_editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="267dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/div_clear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="Numbers of People"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/div_seek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView8"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignRight="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/divpeople_editText"
+                android:layout_marginTop="23dp" />
+
+            <Button
+                android:id="@+id/button_divide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Divide"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/div_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divamount_editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/div_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/button_divide"
+                android:layout_toEndOf="@+id/button_divide"
+                android:layout_toRightOf="@+id/button_divide"
+                android:text="Clear"
+                android:textStyle="bold" />
+
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/div_result"
+                android:layout_marginTop="80dp"
+
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_home_footer"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

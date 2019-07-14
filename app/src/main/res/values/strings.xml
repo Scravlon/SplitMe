@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SplitMe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sa_d">SaDActivity</string>
+    <string name="title_activity_split">SplitActivity</string>
+    <string name="title_activity_divide">DivideActivity</string>
+    <string name="title_activity_split_me">splitMe</string>
+    <string name="title_activity_split_me_full">splitMeFull</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_sad">S&amp;DActivity</string>
+    <string name="title_activity_sad_number">S&amp;DNumber</string>
+    <string name="splitmeversion">SplitMe V 1.5.0</string>
+
+    <string name="banner_home_footer">ca-app-pub-1045433702910438/5147919909</string>
+    <string name="interstitial_full_screen">ca-app-pub-1045433702910438/5147919909</string>
+    <string name="splitmedes">SplitMe helps users to split the bill among your friends with or without
+        taxes accurately. By entering every amount a person spent before adding the tax, you can get
+        how much a person should pay by hitting the split button.
+    </string>
+    <string name="saddes">Split &amp; Divide behaves like SplitMe but with some items to be divided
+        equally and added into each person\' spending.
+    </string>
+    <string name="disdes">You may change the Service tax % and assign a discount value(if there is any)
+    with the buttons on the toolbar. The service tax and gst can be unchecked if there are not any.</string>
+    <string name="dividedes">DivideMe divides the amount equally to the numbers of people assigned.</string>
+    <string name="slide2des">You can use the plus button to add another item for a person! \n \n \n \n \n</string>
+    <string name="splitdes">SplitMe was created to make splitting bills easier. It helps users to split their restaurant bills easily</string>
+    <string name="title_activity_testing">activity_testing</string>
+    <string name="title_activity_new_style">newStyle</string>
+</resources>

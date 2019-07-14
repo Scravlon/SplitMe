@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount of Service Charge:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/et_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dialogtext"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Default service charge = 10%"
+        android:inputType="numberDecimal"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5"
+        android:layout_marginLeft="20dp"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_service"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableRow">
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/et_service"
+            android:layout_marginLeft="69dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="20dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/button_enter"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_service"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/button_cancel"
+            android:layout_toRightOf="@+id/button_cancel"
+            android:text="Ok" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/et_service"
+        android:layout_alignBottom="@+id/et_service"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"/>
+
+</RelativeLayout>

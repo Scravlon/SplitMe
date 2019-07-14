@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/checkBox_Ser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service 10%"
+        android:layout_below="@+id/checkBox_GST"
+        android:layout_alignLeft="@+id/checkBox_GST"
+        android:layout_alignStart="@+id/checkBox_GST" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SplitMe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkBox_GST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GST 6%"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/but_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox_Ser"
+        android:layout_alignStart="@+id/checkBox_Ser"
+        android:layout_below="@+id/checkBox_Ser"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="27dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/but_Split"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/but_cancel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="20dp"
+        android:text="Split" />
+
+    <TextView
+        android:id="@+id/textView_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:text="Discount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_discount"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_toEndOf="@+id/but_cancel"
+        android:layout_toRightOf="@+id/but_cancel"
+        android:text="Change discount at toolbar!"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Service tax % at toolbar!"
+        android:textSize="12sp"
+        android:layout_below="@+id/checkBox_Ser"
+        android:layout_toLeftOf="@+id/but_Split"
+        android:layout_toStartOf="@+id/but_Split" />
+</RelativeLayout>
